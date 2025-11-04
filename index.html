@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Diganta Dey — Fraud Strategy & Analytics</title>
+  <meta name="description" content="Diganta Dey — Lead Fraud Strategy Analyst. Fraud, risk & product strategy; SQL, Python, dashboards. Book time or message me." />
+  <meta property="og:title" content="Diganta Dey — Fraud Strategy & Analytics" />
+  <meta property="og:description" content="Lead Fraud Strategy Analyst with 6+ years across Toast, Amazon, ShareChat, Grail. Book time or message me." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#111827" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: "class",
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          boxShadow: {
+            glow: '0 0 0 4px rgb(59 130 246 / 15%), 0 20px 45px -10px rgb(59 130 246 / 35%)'
+          },
+          backgroundImage: {
+            'hero': 'radial-gradient(1000px 600px at 20% -20%, rgba(59,130,246,0.35), rgba(59,130,246,0) 60%), radial-gradient(800px 500px at 80% -10%, rgba(16,185,129,0.35), rgba(16,185,129,0) 60%), radial-gradient(1000px 500px at 50% 10%, rgba(168,85,247,0.25), rgba(168,85,247,0) 60%)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    /* Hero Animation Canvas */
+    #riskCanvas { filter: drop-shadow(0 10px 30px rgba(0,0,0,.25)); background: radial-gradient(120% 80% at 50% 50%, rgba(16,185,129,0.15), rgba(2,6,23,0.9)); }
+  </style>
+  <!-- SEO & social -->
+  <link rel="canonical" href="https://github.com/DigantaDey" />
+  <!-- <meta name="twitter:card" content="summary_large_image" /> -->
+  <!-- <meta name="twitter:title" content="Diganta Dey — Fraud Strategy & Analytics" /> -->
+  <!-- <meta name="twitter:description" content="Lead Fraud Strategy Analyst with 6+ years across Toast, Amazon, ShareChat & Grail." /> -->
+  <!-- <meta property="og:image" content="https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPO/og-image.jpg" /> -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Diganta Dey",
+    "jobTitle": "Lead Fraud Strategy Analyst",
+    "url": "https://digantadey.in",
+    <!-- "image": "https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPO/portrait.jpg", -->
+    "email": "mailto:engineerdiganta@outlook.com",
+    <!-- "worksFor": {"@type": "Organization", "name": "Toast"}, -->
+    <!-- "address": {"@type": "PostalAddress", "addressLocality": "Bengaluru", "addressRegion": "Karnataka", "addressCountry": "IN"}, -->
+    "sameAs": [
+      "https://www.linkedin.com/in/digantadey"
+    ]
+  }
+  </script>
+</head>
+<body class="bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100 font-sans">
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-white/70 dark:supports-[backdrop-filter]:bg-gray-950/70 border-b border-gray-900/10 dark:border-white/10">
+    <nav class="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
+      <a href="#home" class="text-lg font-bold tracking-tight">Diganta Dey</a>
+      <div class="hidden md:flex items-center gap-6 text-sm text-gray-600 dark:text-gray-300">
+        <a href="#experience" class="hover:text-white">Experience</a>
+        <a href="#skills" class="hover:text-white">Skills</a>
+        <a href="#impact" class="hover:text-white">Impact</a>
+        <a href="#book" class="hover:text-white">Book time</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+        <button id="themeToggle" class="rounded-xl px-3 py-1.5 bg-gray-50 dark:bg-white/5 hover:bg-gray-900/5 dark:hover:bg-white/10">Toggle theme</button>
+      </div>
+      <div class="md:hidden">
+        <button id="menuBtn" class="rounded-xl px-3 py-1.5 bg-gray-50 dark:bg-white/5">Menu</button>
+      </div>
+    </nav>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-gray-900/10 dark:border-white/10 px-6 pb-4">
+      <div class="flex flex-col gap-3 text-sm text-gray-600 dark:text-gray-300">
+        <a href="#experience" class="hover:text-white">Experience</a>
+        <a href="#skills" class="hover:text-white">Skills</a>
+        <a href="#impact" class="hover:text-white">Impact</a>
+        <a href="#book" class="hover:text-white">Book time</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-hero opacity-80 pointer-events-none"></div>
+    <div class="mx-auto max-w-7xl px-6 pt-16 pb-8 sm:pt-20 sm:pb-12 lg:pt-24 lg:pb-16">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div class="max-w-3xl">
+          <p class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-gray-600 dark:text-gray-300 mb-4">
+            <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span> Lead Fraud Strategy Analyst
+          </p>
+          <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">Turning analytics into shipped controls that save millions</h1>
+          <p class="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-2xl">Fraud, risk, and product strategy across Toast, Amazon, ShareChat & Grail. Hands‑on with SQL, Python, BI — partnering with Product, Eng, Ops & Compliance.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#book" class="px-5 py-3 rounded-2xl bg-blue-500 hover:bg-blue-400 text-white shadow-glow">Book a meeting</a>
+            <a href="#contact" class="px-5 py-3 rounded-2xl bg-gray-900/5 dark:bg-white/10 hover:bg-gray-900/10 dark:hover:bg-white/20">Message me</a>
+            <a href="https://www.linkedin.com/in/digantadey" target="_blank" class="px-5 py-3 rounded-2xl bg-gray-900/5 dark:bg-white/10 hover:bg-gray-900/10 dark:hover:bg-white/20">LinkedIn</a>
+          </div>
+          <div class="mt-8 text-sm text-gray-400">Bengaluru, India • Open to collaboration & product/analytics conversations</div>
+        </div>
+        <!-- Fraud/Risk animated canvas -->
+        <div class="relative">
+          <canvas id="riskCanvas" width="640" height="360" class="w-full h-auto rounded-2xl border border-gray-900/10 dark:border-white/10"></canvas>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="mx-auto max-w-7xl px-6 py-20">
+    <h2 class="text-2xl font-bold mb-8">Experience</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <!-- Toast -->
+      <article class="rounded-2xl border border-gray-900/10 dark:border-white/10 bg-gray-50 dark:bg-white/5 p-6 hover:bg-gray-900/5 dark:hover:bg-white/10 transition">
+        <div class="flex items-center justify-between">
+          <h3 class="text-xl font-semibold">Lead Fraud Strategy Analyst — Toast</h3>
+          <span class="text-xs text-gray-400">May 2024 – Present • Bengaluru</span>
+        </div>
+        <ul class="mt-3 space-y-2 text-gray-700 dark:text-gray-200 text-sm">
+          <li>Launched merchant‑level risk model with 56.4% recall and 0.76% alert rate; ~$6.03M blocked post‑flag.</li>
+          <li>Post‑auth AVS × Sift rules cut cohort chargebacks ~87% vs Mar peak while keeping declines stable.</li>
+          <li>Re‑architected keyed‑entry controls: 7 thresholds across 12 cohorts; enabled ~11,938 restaurants by Sep 2025.</li>
+          <li>Unlinked Refund Monitoring (>$250) with SOP + Hex workflow; ~$70k blocked (Feb–Sep 2025).</li>
+          <li>Suspicious DBA screening with cosine similarity; 499 alerts at ~19% PPV; governance & audit built‑in.</li>
+        </ul>
+      </article>
+
+      <!-- ShareChat -->
+      <article class="rounded-2xl border border-gray-900/10 dark:border-white/10 bg-gray-50 dark:bg-white/5 p-6 hover:bg-gray-900/5 dark:hover:bg-white/10 transition">
+        <div class="flex items-center justify-between">
+          <h3 class="text-xl font-semibold">Senior Product Analyst — ShareChat</h3>
+          <span class="text-xs text-gray-400">Mar 2022 – Aug 2023 • Bengaluru</span>
+        </div>
+        <ul class="mt-3 space-y-2 text-gray-700 dark:text-gray-200 text-sm">
+          <li>Owned analytics charter end‑to‑end across ops, product, engineering, legal & design.</li>
+          <li>Built profile trust score; 30% reduction in post‑moderation costs; discard recall up 60% → 80%.</li>
+          <li>Partnered with DS to enhance NSFW detection & in‑house OCR; led SQL‑driven investigations.</li>
+          <li>Identified & solved OTP fraud spikes (−95%).</li>
+        </ul>
+      </article>
+
+      <!-- Grail Insights -->
+      <article class="rounded-2xl border border-gray-900/10 dark:border-white/10 bg-gray-50 dark:bg-white/5 p-6 hover:bg-gray-900/5 dark:hover:bg-white/10 transition">
+        <div class="flex items-center justify-between">
+          <h3 class="text-xl font-semibold">Analyst, Research — Grail Insights</h3>
+          <span class="text-xs text-gray-400">Jun 2020 – Oct 2021 • Bengaluru</span>
+        </div>
+        <ul class="mt-3 space-y-2 text-gray-700 dark:text-gray-200 text-sm">
+          <li>Promoted in 6 months; improved payments QA accuracy from 86% → 98.8% using SQL.</li>
+          <li>Built Access tools, designed databases, and streamlined QA/QC.</li>
+          <li>Power BI dashboards & insights at scale; SME for AML/KYC/TM.</li>
+        </ul>
+      </article>
+
+      <!-- Amazon -->
+      <article class="rounded-2xl border border-gray-900/10 dark:border-white/10 bg-gray-50 dark:bg-white/5 p-6 hover:bg-gray-900/5 dark:hover:bg-white/10 transition">
+        <div class="flex items-center justify-between">
+          <h3 class="text-xl font-semibold">Transaction Risk Investigator — Amazon</h3>
+          <span class="text-xs text-gray-400">Oct 2017 – Jun 2019 • Bengaluru</span>
+        </div>
+        <ul class="mt-3 space-y-2 text-gray-700 dark:text-gray-200 text-sm">
+          <li>Specialized in fraud mitigation for Amazon Payments; SQL/Tableau dashboards for patterns.</li>
+          <li>Filed SARs to FinCEN & UK NCA; identified patterns saving >$100k.</li>
+          <li>Trained a batch of 6 investigators.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="mx-auto max-w-7xl px-6 py-20 border-y border-gray-900/10 dark:border-white/10 bg-gray-50 dark:bg-white/5">
+    <h2 class="text-2xl font-bold mb-8">Core Competencies</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm text-gray-900 dark:text-gray-200">
+      <div class="rounded-xl border border-gray-900/10 dark:border-white/10 bg-white dark:bg-gray-900 p-4">Fraud & Risk Strategy</div>
+      <div class="rounded-xl border border-gray-900/10 dark:border-white/10 bg-white dark:bg-gray-900 p-4">Product Analytics & Experimentation</div>
+      <div class="rounded-xl border border-gray-900/10 dark:border-white/10 bg-white dark:bg-gray-900 p-4">SQL, Python, BI (Tableau/Power BI)</div>
+      <div class="rounded-xl border border-gray-900/10 dark:border-white/10 bg-white dark:bg-gray-900 p-4">Operational Efficiency & Automation</div>
+      <div class="rounded-xl border border-gray-900/10 dark:border-white/10 bg-white dark:bg-gray-900 p-4">Stakeholder Engagement & Governance</div>
+      <div class="rounded-xl border border-gray-900/10 dark:border-white/10 bg-white dark:bg-gray-900 p-4">Project Management (Lean Six Sigma)</div>
+    </div>
+  </section>
+
+  <!-- IMPACT METRICS -->
+  <section id="impact" class="mx-auto max-w-7xl px-6 py-20">
+    <h2 class="text-2xl font-bold mb-8">Selected Impact</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="rounded-2xl border border-gray-900/10 dark:border-white/10 bg-gray-50 dark:bg-white/5 p-6 text-center">
+        <div class="text-3xl font-extrabold">$6.03M+</div>
+        <div class="text-sm text-gray-600 dark:text-gray-300 mt-1">Blocked post‑flag</div>
+      </div>
+      <div class="rounded-2xl border border-gray-900/10 dark:border-white/10 bg-gray-50 dark:bg-white/5 p-6 text-center">
+        <div class="text-3xl font-extrabold">~87%</div>
+        <div class="text-sm text-gray-600 dark:text-gray-300 mt-1">CB reduction (cohorted)</div>
+      </div>
+      <div class="rounded-2xl border border-gray-900/10 dark:border-white/10 bg-gray-50 dark:bg-white/5 p-6 text-center">
+        <div class="text-3xl font-extrabold">0.76%</div>
+        <div class="text-sm text-gray-600 dark:text-gray-300 mt-1">Alert rate (Hourly)</div>
+      </div>
+      <div class="rounded-2xl border border-gray-900/10 dark:border-white/10 bg-gray-50 dark:bg-white/5 p-6 text-center">
+        <div class="text-3xl font-extrabold">11,900+</div>
+        <div class="text-sm text-gray-600 dark:text-gray-300 mt-1">Restaurants enabled</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOK TIME (Google Appointment Schedule) -->
+  <section id="book" class="mx-auto max-w-7xl px-6 py-20">
+    <h2 class="text-2xl font-bold mb-4">Book time with me</h2>
+    <p class="text-gray-600 dark:text-gray-300 mb-6">Use my Google Appointment Schedule to pick a slot. It will block my calendar automatically.</p>
+    <div class="rounded-2xl border border-gray-900/10 dark:border-white/10 bg-gray-50 dark:bg-white/5 p-6 text-center">
+      <a id="googleApptLink" href="https://calendar.app.google/Mh9RRaz5JC8JGrZz7" target="_blank" rel="noopener" class="inline-flex items-center justify-center px-6 py-4 rounded-2xl bg-blue-500 hover:bg-blue-400 text-white text-lg font-semibold shadow-glow">Book on Google Calendar</a>
+      <p class="mt-3 text-sm text-gray-600 dark:text-gray-300">Direct link: <span class="underline">calendar.app.google/Mh9RRaz5JC8JGrZz7</span></p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="mx-auto max-w-7xl px-6 py-20 border-t border-gray-900/10 dark:border-white/10">
+    <h2 class="text-2xl font-bold mb-4">Contact</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="rounded-2xl border border-gray-900/10 dark:border-white/10 bg-gray-50 dark:bg-white/5 p-6">
+        <p class="text-gray-600 dark:text-gray-300">Want to collaborate or discuss fraud strategy & product analytics? Quick actions:</p>
+        <div class="mt-4 grid sm:grid-cols-2 gap-3 text-sm">
+          <button id="copyEmail" class="rounded-xl border border-gray-900/10 dark:border-white/10 bg-gray-900 text-white px-4 py-2 hover:bg-gray-800 dark:bg-white/10 dark:text-inherit dark:hover:bg-white/20">Copy email</button>
+          <a href="#book" class="rounded-xl text-center border border-gray-900/10 dark:border-white/10 bg-blue-500/90 hover:bg-blue-500 text-white px-4 py-2">Book time</a>
+          <button id="downloadVCF" class="rounded-xl border border-gray-900/10 dark:border-white/10 bg-gray-900 text-white px-4 py-2 hover:bg-gray-800 dark:bg-white/10 dark:text-inherit dark:hover:bg-white/20">Download vCard</button>
+          <button id="shareBtn" class="rounded-xl border border-gray-900/10 dark:border-white/10 bg-gray-900 text-white px-4 py-2 hover:bg-gray-800 dark:bg-white/10 dark:text-inherit dark:hover:bg-white/20">Share this site</button>
+        </div>
+        <div class="mt-4 space-y-3 text-sm">
+          <div><span class="text-gray-400">Email:</span> <a class="hover:underline" href="mailto:engineerdiganta@outlook.com">engineerdiganta@outlook.com</a></div>
+          <div><span class="text-gray-400">LinkedIn:</span> <a class="hover:underline" href="https://www.linkedin.com/in/digantadey" target="_blank">linkedin.com/in/digantadey</a></div>
+          <div><span class="text-gray-400">Location:</span> Bengaluru, Karnataka, India</div>
+          <div><span class="text-gray-400">Resume:</span> <a class="hover:underline" href="resume.pdf" download>Download PDF</a></div>
+        </div>
+      </div>
+
+      <!-- Functional contact form (mailto fallback only) -->
+      <form id="contactForm" class="rounded-2xl border border-gray-900/10 dark:border-white/10 bg-gray-50 dark:bg-white/5 p-6">
+        <div class="grid sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-sm mb-1" for="name">Name</label>
+            <input id="name" name="name" required class="w-full rounded-xl bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 border border-gray-900/10 dark:border-white/10 p-3" />
+          </div>
+          <div>
+            <label class="block text-sm mb-1" for="email">Email</label>
+            <input id="email" name="email" type="email" required class="w-full rounded-xl bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 border border-gray-900/10 dark:border-white/10 p-3" />
+          </div>
+        </div>
+        <label class="block text-sm mt-3 mb-1" for="message">Message</label>
+        <textarea id="message" name="message" required class="w-full rounded-xl bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 border border-gray-900/10 dark:border-white/10 p-3 h-32" placeholder="Say hello..."></textarea>
+        <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" />
+        <div class="mt-3 flex gap-3">
+          <button type="submit" class="px-4 py-2 rounded-xl bg-blue-500 hover:bg-blue-400 text-white">Send</button>
+          <a href="#book" class="px-4 py-2 rounded-xl bg-gray-900/5 dark:bg-white/10 hover:bg-gray-900/10 dark:hover:bg-white/20">Book time</a>
+        </div>
+        <p id="formStatus" class="text-xs text-gray-400 mt-3"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="mx-auto max-w-7xl px-6 py-10 text-sm text-gray-400">
+    © <span id="year"></span> Diganta Dey. 
+  </footer>
+
+  <!-- COMMAND PALETTE (no chat) -->
+  <div id="cmdk" class="fixed inset-0 z-50 hidden">
+    <div class="absolute inset-0 bg-black/50" data-close></div>
+    <div class="mx-auto mt-24 w-full max-w-xl p-2">
+      <div class="rounded-2xl border border-gray-900/10 dark:border-white/10 bg-gray-950">
+        <div class="p-2 border-b border-gray-900/10 dark:border-white/10">
+          <input id="cmdkInput" class="w-full bg-transparent p-3 outline-none" placeholder="Type a command… (Try: book, copy email, skills)" />
+        </div>
+        <ul id="cmdkList" class="max-h-80 overflow-auto p-2"></ul>
+      </div>
+      <p class="mt-2 text-center text-xs text-gray-400">Press <kbd class="px-1 py-0.5 rounded bg-gray-900/5 dark:bg-white/10">⌘</kbd>/<kbd class="px-1 py-0.5 rounded bg-gray-900/5 dark:bg-white/10">Ctrl</kbd>+<kbd class="px-1 py-0.5 rounded bg-gray-900/5 dark:bg-white/10">K</kbd> to open • <kbd class="px-1 py-0.5 rounded bg-gray-900/5 dark:bg-white/10">Esc</kbd> to close</p>
+    </div>
+  </div>
+
+  <!-- UTILITIES & LOGIC -->
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu
+    document.getElementById('menuBtn')?.addEventListener('click', ()=>{
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+
+    // Theme with persistence & system preference
+    const html = document.documentElement;
+    const storedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
+      html.classList.add('dark');
+    }
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle?.addEventListener('click',()=>{
+      html.classList.toggle('dark');
+      localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+    });
+
+    // Clipboard helpers
+    const emailTo = 'engineerdiganta@outlook.com';
+    document.getElementById('copyEmail')?.addEventListener('click', async ()=>{
+      await navigator.clipboard.writeText(emailTo);
+      alert('Email copied!');
+    });
+
+    // vCard download
+    function downloadBlob(blob, filename){
+      const url = URL.createObjectURL(blob); const a = document.createElement('a');
+      a.href = url; a.download = filename; a.click(); URL.revokeObjectURL(url);
+    }
+    document.getElementById('downloadVCF')?.addEventListener('click', ()=>{
+      const vcf = `BEGIN:VCARD\nVERSION:3.0\nN:Dey;Diganta;;;\nFN:Diganta Dey\nTITLE:Lead Fraud Strategy Analyst\nORG:Toast\nEMAIL;TYPE=INTERNET,PREF:${emailTo}\nADR;TYPE=HOME:;;Bengaluru;Karnataka;India\nURL:https://www.linkedin.com/in/digantadey\nEND:VCARD`;
+      downloadBlob(new Blob([vcf], {type:'text/vcard'}), 'Diganta_Dey.vcf');
+    });
+
+    // Share API
+    document.getElementById('shareBtn')?.addEventListener('click', async ()=>{
+      try {
+        if (navigator.share) await navigator.share({ title: document.title, text: "Let's connect with Diganta Dey", url: location.href });
+        else { await navigator.clipboard.writeText(location.href); alert('Link copied!'); }
+      } catch(e) {/* user canceled */}
+    });
+
+    // ---------- Contact form: mailto fallback only ----------
+    const form = document.getElementById('contactForm');
+    if (form) {
+      form.dataset.handler = 'false';
+      form.addEventListener('submit', async (e)=>{
+        e.preventDefault();
+        const status = document.getElementById('formStatus');
+        status.textContent = 'Opening your mail app…';
+        try {
+          const formData = new FormData(form);
+          const name = String(formData.get('name')||'').trim();
+          const fromEmail = String(formData.get('email')||'').trim();
+          const msg = String(formData.get('message')||'').trim();
+          const subject = encodeURIComponent(`New message from ${name}`);
+          const body = encodeURIComponent(`${msg}\n\nFrom: ${name} <${fromEmail}>`);
+          window.location.href = `mailto:${emailTo}?subject=${subject}&body=${body}`;
+        } catch (err) {
+          status.textContent = 'Could not open your mail app. Please email me directly at '+emailTo;
+        }
+      });
+      form.dataset.handler = 'true';
+    }
+
+    // ---------- Command Palette ----------
+    const cmdk = document.getElementById('cmdk');
+    const input = document.getElementById('cmdkInput');
+    const list = document.getElementById('cmdkList');
+    const commands = [
+      { label: 'Go: Experience', action: ()=> location.hash = '#experience' },
+      { label: 'Go: Skills', action: ()=> location.hash = '#skills' },
+      { label: 'Go: Impact', action: ()=> location.hash = '#impact' },
+      { label: 'Go: Book time', action: ()=> location.hash = '#book' },
+      { label: 'Go: Contact', action: ()=> location.hash = '#contact' },
+      { label: 'Book on Google', action: ()=> window.open('https://calendar.app.google/Mh9RRaz5JC8JGrZz7','_blank') },
+      { label: 'Copy email', action: ()=> navigator.clipboard.writeText(emailTo) },
+      { label: 'Download resume', action: ()=> window.open('resume.pdf', '_blank') },
+      { label: 'Download vCard', action: ()=> document.getElementById('downloadVCF').click() },
+      { label: 'Toggle theme', action: ()=> themeToggle?.click() },
+    ];
+    function renderCmdk(filter=''){
+      list.innerHTML='';
+      const f = filter.toLowerCase();
+      commands.filter(c=> c.label.toLowerCase().includes(f)).forEach((c,i)=>{
+        const li = document.createElement('li');
+        li.className = 'px-3 py-2 rounded-xl hover:bg-gray-900/5 dark:hover:bg-white/10 cursor-pointer';
+        li.textContent = c.label; li.tabIndex = 0; li.dataset.index=i;
+        li.addEventListener('click',()=>{ c.action(); hideCmdk(); });
+        list.appendChild(li);
+      });
+      if(!list.children.length){
+        const li = document.createElement('li'); li.className='px-3 py-2 text-gray-400'; li.textContent='No results'; list.appendChild(li);
+      }
+    }
+    function showCmdk(){ cmdk.classList.remove('hidden'); input.value=''; renderCmdk(''); input.focus(); }
+    function hideCmdk(){ cmdk.classList.add('hidden'); }
+    input?.addEventListener('input', (e)=> renderCmdk(e.target.value));
+    cmdk.addEventListener('click', (e)=>{ if (e.target.hasAttribute('data-close')) hideCmdk(); });
+    window.addEventListener('keydown', (e)=>{
+      if ((e.key === 'k' && (e.metaKey || e.ctrlKey))) { e.preventDefault(); showCmdk(); }
+      if (e.key === 'Escape') hideCmdk();
+    });
+
+    // ---------- Dual hero animations: Radar ↔ Network (auto-switch every 3s) ----------
+    (function(){
+      const c = document.getElementById('riskCanvas');
+      if (!c) return;
+      const ctx = c.getContext('2d');
+      let w, h, cx, cy, r; const DPR = Math.max(1, Math.min(2, window.devicePixelRatio || 1));
+
+      function resize(){
+        const rect = c.getBoundingClientRect();
+        c.width = Math.max(320, rect.width) * DPR; c.height = Math.max(180, rect.height) * DPR;
+        ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+        w = rect.width; h = rect.height; cx = w/2; cy = h/2; r = Math.min(w, h)*0.46;
+      }
+      resize();
+      window.addEventListener('resize', resize);
+
+      // ---- Animation A: Radar ----
+      const RADAR = {
+        sweep: -Math.PI/2,
+        blips: Array.from({length: 80}, () => ({ ang: Math.random()*Math.PI*2, rad: Math.random()*r*0.95, risk: Math.random(), ttl: 200+Math.random()*400 }))
+      };
+      function drawRadar(){
+        // background vignette
+        const g = ctx.createRadialGradient(cx, cy, 0, cx, cy, r*1.2);
+        g.addColorStop(0,'rgba(2,6,23,0.85)'); g.addColorStop(1,'rgba(2,6,23,0.65)');
+        ctx.fillStyle = g; ctx.fillRect(0,0,w,h);
+        // grid
+        ctx.save(); ctx.translate(cx, cy); ctx.strokeStyle='rgba(255,255,255,0.08)'; ctx.lineWidth=1;
+        for (let i=1;i<=4;i++){ ctx.beginPath(); ctx.arc(0,0,(r*i/4),0,Math.PI*2); ctx.stroke(); }
+        for (let i=0;i<12;i++){ ctx.beginPath(); ctx.rotate(Math.PI/6); ctx.moveTo(0,0); ctx.lineTo(r,0); ctx.stroke(); }
+        // sweep
+        const grad = ctx.createRadialGradient(0,0,0, 0,0,r);
+        grad.addColorStop(0, 'rgba(16,185,129,0.0)'); grad.addColorStop(0.7, 'rgba(16,185,129,0.12)'); grad.addColorStop(1, 'rgba(16,185,129,0.0)');
+        ctx.fillStyle = grad; ctx.beginPath(); ctx.moveTo(0,0); ctx.arc(0,0,r, RADAR.sweep-0.2, RADAR.sweep+0.2); ctx.closePath(); ctx.fill();
+        ctx.beginPath(); ctx.arc(0,0,6,0,Math.PI*2); ctx.fillStyle='rgba(16,185,129,0.8)'; ctx.fill();
+        // blips
+        for (const b of RADAR.blips){ b.ttl--; if (b.ttl<=0){ b.ang=Math.random()*Math.PI*2; b.rad=Math.random()*r*0.95; b.risk=Math.random(); b.ttl=200+Math.random()*400; }
+          const x = Math.cos(b.ang)*b.rad, y = Math.sin(b.ang)*b.rad;
+          const distAng = Math.abs(Math.atan2(y,x) - RADAR.sweep); const ping = distAng < 0.18 ? (0.18 - distAng)/0.18 : 0;
+          const a = 0.25 + ping*0.75; const hi = b.risk>0.9;
+          ctx.beginPath(); ctx.arc(x,y, hi? 3.8:2.6, 0, Math.PI*2);
+          ctx.fillStyle = (hi? 'rgba(239,68,68,':'rgba(59,130,246,') + a + ')'; ctx.fill();
+          if (hi && ping>0){ ctx.strokeStyle='rgba(239,68,68,'+(0.3+0.4*ping)+')'; ctx.beginPath(); ctx.moveTo(x-8,y); ctx.lineTo(x+8,y); ctx.moveTo(x,y-8); ctx.lineTo(x,y+8); ctx.stroke(); }
+        }
+        ctx.restore();
+        RADAR.sweep += 0.02; if (RADAR.sweep>Math.PI*2) RADAR.sweep -= Math.PI*2;
+      }
+
+      // ---- Animation B: Network Graph ----
+      const GRAPH = { nodes: [], edges: [], t: 0 };
+      function initGraph(){
+        const N = 26; const rad = r*0.72;
+        GRAPH.nodes = Array.from({length:N}, (_,i)=>{
+          const th = (i/N)*Math.PI*2; return { x: cx + Math.cos(th)*rad, y: cy + Math.sin(th)*rad, risk: Math.random(), phase: Math.random()*Math.PI*2 };
+        });
+        GRAPH.edges = [];
+        for (let i=0;i<N;i++){ GRAPH.edges.push({ a:i, b:(i+1)%N, w: 0.4+Math.random()*0.4 }); }
+        for (let k=0;k<6;k++){ const a=(Math.random()*N)|0, b=(a+3+((Math.random()*N)|0))%N; GRAPH.edges.push({ a, b, w: 0.7+Math.random()*0.6 }); }
+      }
+      initGraph();
+      function drawGraph(){
+        // background
+        ctx.fillStyle = 'rgba(2,6,23,0.85)'; ctx.fillRect(0,0,w,h);
+        // soft vignette
+        const vg = ctx.createRadialGradient(cx, cy, 0, cx, cy, r*1.2); vg.addColorStop(0,'rgba(2,6,23,0.0)'); vg.addColorStop(1,'rgba(0,0,0,0.35)'); ctx.fillStyle=vg; ctx.fillRect(0,0,w,h);
+        // jitter nodes
+        GRAPH.t += 0.02;
+        for (const n of GRAPH.nodes){ const j = 3 + (n.risk*3); n.phase += 0.02; n._jx = Math.cos(n.phase)*j; n._jy = Math.sin(n.phase*1.3)*j; }
+        // edges
+        for (const e of GRAPH.edges){ const A = GRAPH.nodes[e.a], B = GRAPH.nodes[e.b]; const wgt = e.w; const px = (A.x+A._jx + B.x+B._jx)/2, py = (A.y+A._jy + B.y+B._jy)/2; const pulse = 0.5 + 0.5*Math.sin(GRAPH.t*2 + (A.risk+B.risk));
+          ctx.beginPath(); ctx.moveTo(A.x+A._jx, A.y+A._jy); ctx.lineTo(B.x+B._jx, B.y+B._jy);
+          ctx.strokeStyle = 'rgba(59,130,246,'+(0.15 + 0.35*pulse*wgt)+')'; ctx.lineWidth = 1 + 1.5*wgt; ctx.stroke();
+          if (wgt>1.1){ ctx.beginPath(); ctx.arc(px,py, 2+pulse*2, 0, Math.PI*2); ctx.fillStyle='rgba(239,68,68,'+(0.2+0.5*pulse)+')'; ctx.fill(); }
+        }
+        // nodes
+        for (const n of GRAPH.nodes){ const hi = n.risk>0.85; ctx.beginPath(); ctx.arc(n.x+n._jx, n.y+n._jy, hi? 4.2:3, 0, Math.PI*2); ctx.fillStyle = hi? 'rgba(239,68,68,0.9)':'rgba(59,130,246,0.9)'; ctx.fill(); }
+      }
+
+      // ---- Mode switching ----
+      let mode = 0; // 0: radar, 1: graph
+      setInterval(()=>{ mode = (mode+1)%2; }, 3000);
+
+      // ---- Main loop ----
+      let frame = 0; window.__riskFrames = 0;
+      function tick(){
+        frame++; window.__riskFrames = frame;
+        ctx.clearRect(0,0,w,h);
+        if (mode === 0) drawRadar(); else drawGraph();
+        requestAnimationFrame(tick);
+      }
+      tick();
+    })();
+
+    // -------------------------
+    // Minimal tests (run in browser)
+    // -------------------------
+    (function runSmokeTests(){
+      const results = [];
+      function test(name, fn){ try { fn(); results.push(`✅ ${name}`); } catch(err){ results.push(`❌ ${name}: ${err.message}`); } }
+
+      // Test 1: theme toggle flips class
+      test('Theme toggle flips .dark', ()=>{
+        const before = document.documentElement.classList.contains('dark');
+        themeToggle?.click();
+        const after = document.documentElement.classList.contains('dark');
+        if (before === after) throw new Error('dark class did not change');
+        themeToggle?.click(); // restore
+      });
+
+      // Test 2: contact form submit handler attached
+      test('Contact form submit handler attached', ()=>{
+        const f = document.getElementById('contactForm');
+        if (!f || f.dataset.handler !== 'true') throw new Error('handler not attached');
+      });
+
+      // Test 3: Google appointment link present
+      test('Google appointment link present', ()=>{
+        const l = document.getElementById('googleApptLink');
+        if (!l) throw new Error('googleApptLink missing');
+        if (!l.href || !l.href.startsWith('https://calendar.app.google/Mh9RRaz5JC8JGrZz7')) throw new Error('wrong appointment URL');
+      });
+
+      // Test 4 (async-ish): animation ticking
+      setTimeout(()=>{
+        const ok = typeof window.__riskFrames === 'number' && window.__riskFrames > 10;
+        results.push(ok ? '✅ Animation ticking' : '❌ Animation not ticking');
+        const box = document.getElementById('testResults');
+        if (box) box.textContent = results.join('\n');
+        console.log('🎉 Smoke tests (delayed):', results);
+      }, 500);
+
+      // Render results (hidden)
+      const box = document.createElement('div');
+      box.id = 'testResults';
+      box.style.cssText = 'position:fixed;bottom:8px;right:8px;max-width:320px;font:12px/1.4 system-ui;opacity:.0001;pointer-events:none';
+      box.setAttribute('aria-hidden','true');
+      box.textContent = results.join('\n');
+      document.body.appendChild(box);
+      console.log('🎉 Smoke tests:', results);
+    })();
+  </script>
+</body>
+</html>
